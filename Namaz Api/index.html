@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Namaz Timings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Prayer Timings</h2>
+        <form onsubmit="getNamazTimings(); return false;">
+            <input type="text" class="search" id="iCity" autofocus required placeholder="Enter your city name"><br><br>
+            <!-- <input type="text" class="search" id="iCountry" autofocus required placeholder="Enter your country name"> -->
+        </form>
+
+        <div class="content">
+            <div class="abc" id="day"></div>
+            <div class="abc" id="namaz1"></div>
+            <div class="abc" id="namaz2"></div>
+            <div class="abc" id="namaz3"></div>
+            <div class="abc" id="namaz4"></div>
+            <div class="abc" id="namaz5"></div>
+            <!-- <div id="asr"></div>
+            <div id="maghrib"></div>
+            <div id="isha"></div> -->
+        </div>
+    </div>
+</body>
+
+</html>
